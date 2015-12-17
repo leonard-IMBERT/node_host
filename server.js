@@ -3,7 +3,7 @@ var fs = require('fs');
 
 var port = process.env.PORT;
 var file = process.env.FILE_PATH;
-if(file === undefined || file === null || file.charAt(0) !== "/" || port === undefined || port === null) {
+if(file === undefined || file === null || port === undefined || port === null) {
   console.error("Cannot initialize the project");
 } else {
   http.createServer((request, response) => {
