@@ -1,0 +1,13 @@
+{
+  "subject": "example",
+  "goal": "be an example",
+  "likes" : [
+    "chocolate",
+    "star-wars",
+    "darth vader"
+  ],
+  "informations": {
+    "field1": "1",
+    "field2": "2"
+  }
+}

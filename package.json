@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "host.sh"
+    "start": "host.sh example.json 80"
   },
   "repository": {
     "type": "git",
