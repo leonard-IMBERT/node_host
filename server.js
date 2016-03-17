@@ -12,6 +12,7 @@ if(file === undefined || file === null || port === undefined || port === null) {
       response.write("Ready to work !")
       response.end()
     } else if(request.url === "/download") {
+      response.setHeader('Content-type','application/json');
       response.writeHead(200);
       var stream = fs.createReadStream(file,{flags: 'r'});
       var fd = null;
