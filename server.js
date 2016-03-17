@@ -15,10 +15,7 @@ if(file === undefined || file === null || port === undefined || port === null) {
       response.setHeader('Content-type','application/json');
       response.writeHead(200);
       var stream = fs.createReadStream(file,{flags: 'r'});
-      var fd = null;
-      stream.on('open', (fdI) => fd = fdI);
-      stream.on('data', (data) => response.write(data));
-      stream.on('end' , () => response.end());
+      stream.pipe(response);
     } else {
       response.writeHead(404)
       response.write("Action not found")
